@@ -1,0 +1,165 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <canvas id="canvas" class="canvas"></canvas>
+      <div id="page" class="page">
+        <div id="home-button" class="title">
+          <h1>trevor samson</h1>
+        </div>
+        <div class="menu">
+          <div id="about-button" class="menu-item">
+            <h2>about</h2>
+          </div>
+          <div id="bio-button" class="menu-item">
+            <h2>bio</h2>
+          </div>
+          <div id="projects-button" class="menu-item">
+            <h2>projects</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div id="about-page" class="subpage">
+            <div class="about">
+              <p>
+                It's common to observe that, while promising to connect us, social \
+                media etc. also do the opposite, mass-producing hyper-individuality \
+                in an extractive process that separates us both virtually and "in real \
+                life."
+              </p>
+              <p>
+                This page exists as an experiment to explore what else might be \
+                possible if focus is placed instead on what's shared in common, as \
+                a starting point for thinking about how people can learn to act \
+                collaboratively, and as a place to put my resume.
+              </p>
+              <p>
+                As you click around the page, you see the footprints of the people \
+                who came here before you, and you contibute your own. These show how \
+                it has been used by others and how you might use it yourself.
+              </p>
+              <p>
+                Though here these footprints are just generated at random, \
+                hopefully they demonstrate how a site like this might lend itself \
+                to its own reorganization as visual data accrue.
+              </p>
+              <p>
+                More generally, it is hoped to suggest how systems that focus on \
+                people's commonality and lived experiences of participating in \
+                them might be shaped to work better for people collectively by \
+                fostering the pursuit of their common, de-individualized interests.
+              </p>
+              <p>
+                The source for this page is available
+                <a href="https://github.com/trs225/bio">here</a>.
+              </p>
+            </div>
+          </div>
+          <div id="bio-page" class="subpage">
+            <iframe class="bio" src="https://drive.google.com/file/d/1oH_s8FeqQXnuSjcLWVZN-aAOBSC3wjkq/preview"></iframe>
+          </div>
+          <div id="projects-page" class="subpage">
+            <div class="projects">
+              Yo dawg
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        margin:0;
+      }
+    
+      .wrapper {
+        height:100%;
+        margin:0;
+        overflow:hidden;
+        position:relative;
+        width:100%;
+      }
+    
+      .canvas {
+        opacity:0.05;
+      }
+    
+      .page {
+        align-items:center;
+        display:flex;
+        flex-flow:column;
+        font-family:Courier New, Courier, monospace;
+        height:100%;
+        left:0;
+        position:absolute;
+        top:0;
+        width:100%;
+      }
+
+      .title {
+        flex:0 1 auto;
+        justify-content:center;
+        padding:40px 20px 20px 20px;
+        text-align:center;
+        width:100%;
+      }
+
+      .title h1 {
+        margin:0;
+      }
+
+      .menu {
+        border:1px solid black;
+        display:flex;
+        flex:0 1 auto;
+        flex-direction:row;
+        justify-content:center;
+        width:100%;
+      }
+
+      .menu-item  {
+        padding:10px 20px 10px 20px;
+      }
+
+      .menu-item h2 {
+        margin:0;
+      }
+
+      .content {
+        display:flex;
+        flex:1 1 auto;
+        height:0;
+        justify-content:center;
+        overflow:auto;
+        position:relative;
+        width:100%;
+      }
+
+      .subpage {
+        border:1px solid black;
+        display:none;
+        flex:auto;
+        margin:20px;
+        max-height:1060px;
+        max-width:830px;
+        overflow-y:auto;
+        width:100%;
+      }
+
+      .about {
+        margin:40px;
+      }
+
+      .bio {
+        border:none;
+        height:100%;
+        width:100%;
+      }
+
+      .projects {
+        margin:40px;
+      }
+    </style>
+    <script src="javascript/bio.js"></script>
+  </body>
+</html>

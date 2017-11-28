@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}  % for cdot
+\usepackage{changepage}  % for adjustwidth
+\usepackage{geometry}  % for newgeometry
+\usepackage{graphicx}  % for geometry
+\usepackage{scrextend}  % for addmargin
+
+\usepackage{nopageno}  % remove page numbers
+
+\newgeometry{left=0.5in, right=0.5in, top=0.5in, bottom=0.5in}  % set page margins
+
+\frenchspacing  % single space after sentence
+\setlength{\parindent}{0pt}  % don't indent paragraphs
+\setlength{\parskip}{0pt}  % skip lines between paragraphs
+\renewcommand*\ttdefault{pcr} % make courier default mono font
+\renewcommand{\familydefault}{\ttdefault} % use default mono font
+
+% contact info
+\newcommand{\contact}[3]{
+  \begin{centering}
+    \Large{\textbf{#1}}
+
+    \large{#2}
+
+    \vspace{2pt}
+    \normalsize{#3}
+
+  \vspace{16pt}
+  \end{centering}
+}
+
+% keywords info
+\newcommand{\keywords}[1]{
+  \general{
+    \footnotesize{Keywords: #1}
+  }
+}
+
+% topic of interest
+\newcommand{\topic}[2]{ % name, content
+
+  \vspace{16pt}
+  \textmd{#1}
+
+  \vspace{4pt}
+  #2
+}
+
+% general item
+\newcommand{\general}[1]{ % content
+
+  \vspace{4pt}
+  \begin{adjustwidth}{20pt}{0pt}
+    \small{#1}
+  \end{adjustwidth}
+}
+
+% detail item
+\newcommand{\detail}[1] { % content
+
+    \begin{adjustwidth}{4pt}{20pt}
+      #1
+    \end{adjustwidth}  
+}
+
+% experience item
+\newcommand{\experience}[3]{ % heading, subheading, date
+  \general{
+    \small{#1} \hfill \footnotesize{#3}
+    \detail{#2}
+  }
+}
+
+% experience item
+\newcommand{\bigexperience}[4]{ % heading, subheading, date, content
+  \general{
+    \small{#1} \hfill \footnotesize{#3}
+    \detail{
+      #2
+    
+      \vspace{4pt}
+      \footnotesize{#4}
+    }
+  }
+}
+
+\begin{document}
+
+\contact{Trevor Samson}
+{tsamson@google.com}
+{(781) 572-9527}
+
+\keywords{
+  Software systems, machine learning, data processing, community effects.
+}
+
+\topic{Education}
+{
+  \experience{Cornell University, College of Engineering}
+  {B.Sc. in Engineering Physics, \textit{cum laude}}
+  {May, 2015}
+
+  \experience{Winchester High School, Massachusetts}
+  {High school diploma}
+  {June, 2011}
+}
+
+\topic{Software Engineering}
+{
+  \bigexperience{Google Books}
+  {Google, Alphabet Inc.}
+  {July 2017 - Present}
+  {Backend ML and NLP for keyword extraction. Frontend and UI.}
+
+  \bigexperience{Android Things}
+  {Google, Alphabet Inc.}
+  {Aug. 2016 - July 2017}
+  {Adapting ML models for low-compute devices. Data pipelines.}
+
+  \bigexperience{Nest Algorithms}
+  {Nest Labs, Alphabet Inc.}
+  {Sept. 2015 - Aug. 2016}
+  {Cloud ML for data collected across distributed IoT devices.}
+}
+
+\topic{Research}
+{
+  \bigexperience{Research Affiliate}
+  {MIT, Laboratory for Nuclear Science}
+  {May - Aug. 2013, 2014}
+  {Statistical analysis of large CERN datasets.}
+
+  \bigexperience{Undergraduate Researcher}
+  {Cornell University, LASSP}
+  {Sept. 2013 - May 2014}
+  {QED simulations to predict material properties.}
+}
+
+\topic{Community}
+{
+  \experience{Greenstar Cooperative Market}
+  {Ithaca, NY}
+  {Apr. 2015 - Sept. 2015}
+
+  \experience{Mathematical Physics II, Teaching Assistant}
+  {Cornell University, College of Engineering}
+  {Jan. 2015 - May 2015}
+
+  \experience{Watermargin Cooperative, President}
+  {Cornell University}
+  {Aug. 2014 - May 2015}
+}
+
+\topic{Skills}
+{
+  \general{
+    Java Python SQL Javascript C++ \LaTeX{}
+    {  }$\cdot${  }
+    BigQuery DataFlow TensorFlow Pandas
+  }
+}
+
+\end{document}
+
+\topic{Community}
+{
+  \experience{Data for Black Lives}
+  {MIT Media Lab}
+  {Nov. 2017}
+
+  \experience{Hacking Hemophilia}
+  {MIT Hacking Medicine}
+  {Oct. 2017}
+
+  \experience{Research @}
+  {Google}
+  {Nov. 2016}
+}

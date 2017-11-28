@@ -1,0 +1,8 @@
+# Ignore trash
+**/.DS_STORE
+
+# Ignore tmp files
+**/*~
+
+# Ignore bazel outputs
+bazel-*
