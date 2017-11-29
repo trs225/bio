@@ -99,6 +99,9 @@ public class ElementalHttpServer {
         throw new MethodNotSupportedException(method + " method not supported");
       }
       String target = request.getRequestLine().getUri();
+      if (target.equals("/")) {
+        target = "/index.html";
+      }
       if (request instanceof HttpEntityEnclosingRequest) {
         HttpEntity entity = ((HttpEntityEnclosingRequest) request).getEntity();
         byte[] entityContent = EntityUtils.toByteArray(entity);

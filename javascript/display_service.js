@@ -90,9 +90,6 @@ goog.require('bio.Initializable');
   /** @private */ resize() {
     const canvas = this.components.canvas;
     const wrapper = this.components.wrapper;
-    
-    console.log('background ' + canvas.style.backgroundColor);
-
     [this.width, this.height] = [wrapper.clientWidth, wrapper.clientHeight];
     [canvas.width, canvas.height] = [this.width, this.height];
     this.locationService.resize(this.width, this.height);

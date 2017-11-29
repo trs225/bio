@@ -69,7 +69,6 @@ goog.require('bio.Initializable');
   *getRandomLocations(x, y) {
     for (let i = 0; i < this.nRandom; i++) {
       const [w, z] = this.sample(x, y);
-      console.log('w ' + w + ' z ' + z);
       if (w && z) {
         yield this.fuzz(w, z);
       }
