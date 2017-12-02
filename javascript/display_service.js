@@ -43,14 +43,29 @@ goog.require('bio.Initializable');
       this.hidePages();
     });
 
+    this.components.buttons.home.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.home.style.fontWeight = 'bold';
+    });
+
     this.components.buttons.about.addEventListener('click', () => {
       this.hidePages();
       this.components.pages.about.style.display = 'inline-block';
     });
 
+    this.components.buttons.about.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.about.style.fontWeight = 'bold';
+    });
+
     this.components.buttons.bio.addEventListener('click', () => {
       this.hidePages();
       this.components.pages.bio.style.display = 'inline-block';
+    });
+
+    this.components.buttons.bio.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.bio.style.fontWeight = 'bold';
     });
 
     this.components.buttons.projects.addEventListener('click', () => {
@@ -60,15 +75,59 @@ goog.require('bio.Initializable');
       this.components.projects.projects.style.display = 'flex';
     });
 
+    this.components.buttons.projects.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.projects.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.website.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.website.style.fontWeight = 'bold';
+    });
+
     this.components.projects.hemophilia.addEventListener('click', () => {
       this.hideProjects();
       this.components.fullProjects.hemophilia.style.display = 'inline-block';
     });
 
+    this.components.projects.hemophilia.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.hemophilia.style.fontWeight = 'bold';
+    });
+
     this.components.projects.probabilities.addEventListener('click', () => {
-      console.log('clicked on probabilities');
       this.hideProjects();
       this.components.fullProjects.probabilities.style.display = 'inline-block';
+    });
+
+    this.components.projects.probabilities.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.probabilities.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.pygquery.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.pygquery.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.builder.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.builder.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.books.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.books.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.music.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.music.style.fontWeight = 'bold';
+    });
+
+    this.components.projects.other.addEventListener('mouseover', () => {
+      this.unhighlight();
+      this.components.text.other.style.fontWeight = 'bold';
     });
 
     window.addEventListener('mousemove', (event) => {
@@ -99,6 +158,12 @@ goog.require('bio.Initializable');
   /** @private */ hideFullProjects() {
     for (const fullProject of Object.values(this.components.fullProjects)) {
       fullProject.style.display = 'none';
+    }
+  }
+
+  /** @private */ unhighlight() {
+    for (const fullProject of Object.values(this.components.text)) {
+      fullProject.style.fontWeight = 'normal';
     }
   }
 

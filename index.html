@@ -6,17 +6,17 @@
       <canvas id="canvas" class="canvas"></canvas>
       <div id="page" class="page">
         <div id="home-button" class="title">
-          <h1>trevor samson</h1>
+          <h1 id="home-button-text">trevor samson</h1>
         </div>
         <div class="menu">
           <div id="about-button" class="menu-item">
-            <h2>about</h2>
+            <h2 id="about-button-text">about</h2>
           </div>
           <div id="bio-button" class="menu-item">
-            <h2>bio</h2>
+            <h2 id="bio-button-text">bio</h2>
           </div>
           <div id="projects-button" class="menu-item">
-            <h2>projects</h2>
+            <h2 id="projects-button-text">projects</h2>
           </div>
         </div>
         <div class="content">
@@ -25,14 +25,13 @@
               <p>
                 It's common to observe that, while promising to connect us, social
                 media etc. also do the opposite, mass-producing hyper-individuality
-                in an extractive process that separates us both virtually and "in real
-                life."
+                in an extractive process that separates us both virtually and in real
+                life.
               </p>
               <p>
-                This page exists as an experiment to explore what else might be
-                possible if focus is placed instead on what's shared in common, as
-                a starting point for thinking about how people can learn to act
-                collaboratively, and as a place to put my resume.
+                This page exists as a starting point for thinking about what else
+                might be possible if focus is placed instead on what's shared in
+                common, and as a place to put my resume.
               </p>
               <p>
                 As you click around the page, you see the footprints of the people
@@ -40,19 +39,15 @@
                 it has been used by others and how you might use it yourself.
               </p>
               <p>
-                Though here these footprints are just generated at random,
-                hopefully they demonstrate how a site like this might lend itself
-                to its own reorganization as visual data accrue.
+                Though here these footprints are just generated at random, they're
+                meant to suggest how people might passively teach each other how
+                to use a simple website like this one.
               </p>
               <p>
-                More generally, it is hoped to suggest how systems that focus on
+                More generally it's hoped to suggest how systems that focus on
                 people's commonality and lived experiences of participating in
                 them might be shaped to work better for people collectively by
                 fostering the pursuit of their common, de-individualized interests.
-              </p>
-              <p>
-                The source for this page is available
-                <a href="https://github.com/trs225/bio">here</a>.
               </p>
             </div>
           </div>
@@ -63,28 +58,36 @@
           <div id="projects-page" class="subpage">
             <div id="projects" class="projects">
               <div id="website" class="project">
-                website
+                <h3 id="website-button-text">website</h3>
+                <div>
+                  this website, built from scratch and hosted <s>on a raspberry pi</s>
+                  temporarily on github. its source is available
+                  <a href="https://github.com/trs225/bio">here</a>.
+                </div>
               </div>
               <div id="hemophilia" class="project">
-                hemophilia
+                <h3 id="hemophilia-button-text">hemophilia<h3>
+                <div>
+                  
+                </div>
               </div>
               <div id="probabilities" class="project">
-                probabilities
+                <h3 id="probabilities-button-text">probabilities</h3>
               </div>
               <div id="pygquery" class="project">
-                pygquery
+                <h3 id="pygquery-button-text">pygquery</h3>
               </div>
               <div id="builder" class="project">
-                builder
+                <h3 id="builder-button-text">builder</h3>
               </div>
               <div id="books" class="project">
-                books
+                <h3 id="books-button-text">books</h3>
               </div>
               <div id="music" class="project">
-                music
+                <h3 id="music-button-text">music</h3>
               </div>
               <div id="other" class="project">
-                other
+                <h3 id="other-button-text">other</h3>
               </div>
             </div>
             <iframe id="full-hemophilia" class="full-project" src="https://drive.google.com/file/d/1vLnr2MqmxiatEIrOBT9NFV5CihV632Rq/preview" width="640" height="480">
@@ -133,6 +136,7 @@
       }
 
       .title h1 {
+        font-weight: normal;
         margin: 0;
       }
 
@@ -150,6 +154,7 @@
       }
 
       .menu-item h2 {
+        font-weight: normal;
         margin: 0;
       }
 
@@ -197,6 +202,15 @@
         min-height: 200px;
         padding: 5px;
         width: 200px;
+      }
+
+      .project h3 {
+        font-weight: normal;
+        margin:0;
+      }
+
+      .project div {
+        margin-top: 10px;
       }
 
       .full-project {

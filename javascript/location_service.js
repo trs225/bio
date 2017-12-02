@@ -10,7 +10,7 @@ goog.require('bio.Initializable');
     /** @private @type {number}*/ this.width;
     /** @private @type {number}*/ this.height;
 
-    /** @private @const */ this.fuzzRange = [40, 100];
+    /** @private @const */ this.fuzzRange = [10, 100];
     /** @private @const */ this.nRandom = 4;
 
     /**
