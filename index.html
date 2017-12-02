@@ -57,109 +57,155 @@
             </div>
           </div>
           <div id="bio-page" class="subpage">
-            <iframe class="bio" src="https://drive.google.com/file/d/1oH_s8FeqQXnuSjcLWVZN-aAOBSC3wjkq/preview"></iframe>
+            <iframe class="bio" src="https://drive.google.com/file/d/1oH_s8FeqQXnuSjcLWVZN-aAOBSC3wjkq/preview">
+            </iframe>
           </div>
           <div id="projects-page" class="subpage">
-            <div class="projects">
-              WIP ;)
+            <div id="projects" class="projects">
+              <div id="website" class="project">
+                website
+              </div>
+              <div id="hemophilia" class="project">
+                hemophilia
+              </div>
+              <div id="probabilities" class="project">
+                probabilities
+              </div>
+              <div id="pygquery" class="project">
+                pygquery
+              </div>
+              <div id="builder" class="project">
+                builder
+              </div>
+              <div id="books" class="project">
+                books
+              </div>
+              <div id="music" class="project">
+                music
+              </div>
+              <div id="other" class="project">
+                other
+              </div>
             </div>
+            <iframe id="full-hemophilia" class="full-project" src="https://drive.google.com/file/d/1vLnr2MqmxiatEIrOBT9NFV5CihV632Rq/preview" width="640" height="480">
+            </iframe>
+            <iframe id="full-probabilities" class="full-project" src="https://drive.google.com/file/d/1uRfUgXKn6foaawL_n4hZQQO83tc887eg/preview" width="640" height="480">
+            </iframe>
           </div>
         </div>
       </div>
     </div>
     <style>
       body {
-        margin:0;
+        margin: 0;
       }
     
       .wrapper {
-        height:100%;
-        margin:0;
-        overflow:hidden;
-        position:relative;
-        width:100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
       }
     
       .canvas {
-        opacity:0.05;
+        opacity: 0.05;
       }
     
       .page {
-        align-items:center;
-        display:flex;
-        flex-flow:column;
-        font-family:Courier New, Courier, monospace;
-        height:100%;
-        left:0;
-        position:absolute;
-        top:0;
-        width:100%;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        font-family: Courier New, Courier, monospace;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
       }
 
       .title {
-        flex:0 1 auto;
-        justify-content:center;
-        padding:40px 20px 20px 20px;
-        text-align:center;
-        width:100%;
+        flex: 0 1 auto;
+        justify-content: center;
+        padding: 40px 20px 20px 20px;
+        text-align: center;
+        width: 100%;
       }
 
       .title h1 {
-        margin:0;
+        margin: 0;
       }
 
       .menu {
-        border:1px solid black;
-        display:flex;
-        flex:0 1 auto;
-        flex-direction:row;
-        justify-content:center;
-        width:100%;
+        border: 1px solid black;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
       }
 
       .menu-item  {
-        padding:10px 20px 10px 20px;
+        padding: 10px 20px 10px 20px;
       }
 
       .menu-item h2 {
-        margin:0;
+        margin: 0;
       }
 
       .content {
-        display:flex;
-        flex:1 1 auto;
-        height:0;
-        justify-content:center;
-        overflow:auto;
-        position:relative;
-        width:100%;
+        display: flex;
+        flex: 1 1 auto;
+        height: 0;
+        justify-content: center;
+        overflow: auto;
+        position: relative;
+        width: 100%;
       }
 
       .subpage {
-        border:1px solid black;
-        display:none;
-        flex:auto;
-        margin:20px;
-        max-height:1060px;
-        max-width:830px;
-        overflow-y:auto;
-        width:100%;
+        border: 1px solid black;
+        display: none;
+        flex: auto;
+        margin: 20px;
+        max-height: 1060px;
+        max-width: 830px;
+        overflow-y: auto;
+        width: 100%;
       }
 
       .about {
-        margin:40px;
+        margin: 40px;
       }
 
       .bio {
-        border:none;
-        height:100%;
-        width:100%;
+        border: none;
+        height: 100%;
+        width: 100%;
       }
 
       .projects {
-        margin:40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+
+      .project {
+        border: 1px solid black;
+        margin: 20px;
+        min-height: 200px;
+        padding: 5px;
+        width: 200px;
+      }
+
+      .full-project {
+        border: none;
+        display: none;
+        height: 100%;
+        width: 100%;
       }
     </style>
-    <script src="tree/master/javascript/bio.js"></script>
+    <script src="javascript/bio.js"></script>
   </body>
 </html>

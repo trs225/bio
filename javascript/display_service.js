@@ -55,7 +55,20 @@ goog.require('bio.Initializable');
 
     this.components.buttons.projects.addEventListener('click', () => {
       this.hidePages();
+      this.hideFullProjects();
       this.components.pages.projects.style.display = 'inline-block';
+      this.components.projects.projects.style.display = 'flex';
+    });
+
+    this.components.projects.hemophilia.addEventListener('click', () => {
+      this.hideProjects();
+      this.components.fullProjects.hemophilia.style.display = 'inline-block';
+    });
+
+    this.components.projects.probabilities.addEventListener('click', () => {
+      console.log('clicked on probabilities');
+      this.hideProjects();
+      this.components.fullProjects.probabilities.style.display = 'inline-block';
     });
 
     window.addEventListener('mousemove', (event) => {
@@ -76,6 +89,16 @@ goog.require('bio.Initializable');
   /** @private */ hidePages() {
     for (const page of Object.values(this.components.pages)) {
       page.style.display = 'none';
+    }
+  }
+
+  /** @private */ hideProjects() {
+    this.components.projects.projects.style.display = 'none';
+  }
+
+  /** @private */ hideFullProjects() {
+    for (const fullProject of Object.values(this.components.fullProjects)) {
+      fullProject.style.display = 'none';
     }
   }
 
