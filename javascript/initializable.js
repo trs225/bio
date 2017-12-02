@@ -1,10 +1,6 @@
 goog.provide('bio.Initializable');
 
-/** @interface */
-bio.Initializable = class {
+/** @interface */ bio.Initializable = class {
 
-  /**
-   * @return {void}
-   */
-  initialize() {};
+  /** @return {void} */ initialize() {};
 };

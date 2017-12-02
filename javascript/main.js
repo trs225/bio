@@ -5,9 +5,7 @@ goog.require('bio.Initializable');
 goog.require('bio.LocationService');
 
 /** @export */ function main() {
-
   const components = new bio.Components();
-
   const footprintService = new bio.FootprintService(components.canvas);
   const locationService = new bio.LocationService();
 

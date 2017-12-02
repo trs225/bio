@@ -182,18 +182,4 @@ goog.require('bio.Initializable');
     [canvas.width, canvas.height] = [this.width, this.height];
     this.locationService.resize(this.width, this.height);
   }
-  
-  /**
-   * @private
-   */
-  test() {
-    for (let i = 0; i < this.width; i += this.width / 20) {
-      for (let j = 0; j < this.height; j += this.height / 20) {
-        const [x, y] = this.locationService.sample(i, j);
-        if (x && y) {
-          this.footprintService.draw(x, y);
-        }
-      }
-    }
-  }
 };

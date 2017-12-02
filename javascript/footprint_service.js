@@ -9,9 +9,7 @@ goog.require('bio.Initializable');
   constructor(canvas) {
     /** @private @const */ this.canvas = canvas;
     /** @private @const */ this.context = canvas.getContext('2d');
-
     /** @private @const */ this.background = 'white';
-
     /** @private @const */ this.color = 'black';
     /** @private @const */ this.width = 2;
     /** @private @const */ this.radius = 20;
