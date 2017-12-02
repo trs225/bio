@@ -30,11 +30,11 @@
               </p>
               <p>
                 This page exists as a starting point for thinking about what else
-                might be possible if focus is placed instead on what's shared in
-                common, and as a place to put my resume.
+                might be possible if focus is placed instead on what people share
+                in common with each other.
               </p>
               <p>
-                As you click around the page, you see the footprints of the people
+                As you click around the page, you see the footprints of the visitors
                 who came here before you, and you contibute your own. These show how
                 it has been used by others and how you might use it yourself.
               </p>
@@ -66,28 +66,57 @@
                 </div>
               </div>
               <div id="hemophilia" class="project">
-                <h3 id="hemophilia-button-text">hemophilia<h3>
+                <h3 id="hemophilia-button-text">hemophilia</h3>
                 <div>
-                  
+                  hackathon presentation proposing to coordinate donations of excess
+                  hemophilia medicine to underserved patients around the world.
                 </div>
               </div>
               <div id="probabilities" class="project">
                 <h3 id="probabilities-button-text">probabilities</h3>
+                <div>
+                  final paper for a networks course that describes some of the many
+                  ways in which probabilities are commonly misunderstood.
+                </div>
               </div>
               <div id="pygquery" class="project">
                 <h3 id="pygquery-button-text">pygquery</h3>
+                <div>
+                  python system letting you interact with remote sql databases as
+                  though they were local pandas dataframes.
+                  (source sadly not public.)
+                </div>
               </div>
               <div id="builder" class="project">
                 <h3 id="builder-button-text">builder</h3>
+                <div>
+                  python system for creating modular injection-proof sql query
+                  trees for unit testing and result caching.
+                  (source unfortunately not public.)
+                </div>
               </div>
               <div id="books" class="project">
                 <h3 id="books-button-text">books</h3>
+                <div>
+                  <a href="https://books.google.com/books?view_type=grid&uid=112810215471395453460&as_coll=4">
+                  here</a>'s a list of what i've been reading recently, dating back
+                  to around the summer of 2015.
+                </div>
               </div>
               <div id="music" class="project">
                 <h3 id="music-button-text">music</h3>
+                <div>
+                  <a href="https://www.youtube.com/playlist?list=LLcVEogjt3d-_bk36__RNvxA">
+                  here</a>'s a list of what i've been listening to recently, dating
+                  back pretty far.
+                </div>
               </div>
               <div id="other" class="project">
                 <h3 id="other-button-text">other</h3>
+                <div>
+                  i also enjoy biking, yoga, cooking, pottery, coffee, nighttime,
+                  and community markets.
+                </div>
               </div>
             </div>
             <iframe id="full-hemophilia" class="full-project" src="https://drive.google.com/file/d/1vLnr2MqmxiatEIrOBT9NFV5CihV632Rq/preview" width="640" height="480">
@@ -140,6 +169,10 @@
         margin: 0;
       }
 
+      .title:hover {
+        cursor: pointer;
+      }
+
       .menu {
         border: 1px solid black;
         display: flex;
@@ -156,6 +189,10 @@
       .menu-item h2 {
         font-weight: normal;
         margin: 0;
+      }
+
+      .menu-item:hover {
+        cursor: pointer;
       }
 
       .content {
@@ -207,6 +244,10 @@
       .project h3 {
         font-weight: normal;
         margin:0;
+      }
+
+      .project:hover {
+        cursor: pointer;
       }
 
       .project div {
